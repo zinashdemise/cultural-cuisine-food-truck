@@ -1,0 +1,89 @@
+ @charset "utf-8";
+
+/* Label Styling */
+     label { 
+    display: block; /* Fix "display: left;" to "display: block" */
+     float: left;
+    clear: left;
+    margin: 5px;
+    width: 200px; 
+ } 
+
+/* Input, Select, and Textarea Styling */
+ input, select, textarea {
+    display: block; /* Fix "display: left;" to "display: block" */
+    float: left;
+    margin: 5px 0;
+    width: 200px;
+} 
+
+/* Form Paragraph Styling */
+form p {
+    clear: both; /* Ensure no floats affect this element */
+    text-align: center;
+    padding-top: 70px ;
+} 
+
+/* Submit Button Styling */
+ input[type='submit'] {
+    background-color: rgb(170, 144, 146);
+    color: rgb(245, 245, 165);
+    border-radius: 20px;
+    float: none; /* Keep the button centered */
+     display: inline-block; /* Better for inline elements like buttons */
+    font-size: 1.1em;
+    height: 30px;
+    width: 150px;
+    text-align: center;  
+     cursor: pointer; /* Add hover pointer for better UX  */
+ }
+/* Optional: Add hover effect for the submit button */
+ input[type='submit']:hover {
+    background-color: rgb(150, 120, 122); 
+     color: white;  
+ } 
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding:  20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+} 
+
+ label {
+    font-size: 1rem;
+    color: #333;
+} 
+
+ input, select, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+} 
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+    height: 100px;  
+} 
+
+button {
+    background-color:orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+ button:hover {
+    background-color:black;
+} 
